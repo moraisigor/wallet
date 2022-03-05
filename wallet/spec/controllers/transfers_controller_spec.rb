@@ -83,8 +83,7 @@ RSpec.describe TransfersController, type: :request do
       end
 
       it { is_expected.to have_http_status(:unprocessable_entity) }
-      it {
-        expect(subject.body).to eq(create_transfer_duplicate_transaction_error_response.to_json) }
+      it { expect(subject.body).to eq(create_transfer_duplicate_transaction_error_response.to_json) }
     end
 
     context "when create transfer and get a generic error" do
