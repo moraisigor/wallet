@@ -5,7 +5,7 @@
 * Rails 7.0.2.2
 * Postgre 13.6
 
-### How To RUn
+### How To Run
 ```
 bin/rails server -e development -p 3000
 ```
